@@ -5,7 +5,121 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <img src="logo.svg" style="display: block; margin: 130px auto 0 auto; width: 300px; height: 300px;">
+  <style>
+.anim{
+  animation: animationFrames linear 0.8s;
+  animation-iteration-count: 20;
+  transform-origin: ;
+  -webkit-animation: animationFrames linear 0.8s;
+  -webkit-animation-iteration-count: 20;
+  -webkit-transform-origin: ;
+  -moz-animation: animationFrames linear 0.8s;
+  -moz-animation-iteration-count: 20;
+  -moz-transform-origin: ;
+  -o-animation: animationFrames linear 0.8s;
+  -o-animation-iteration-count: 20;
+  -o-transform-origin: ;
+  -ms-animation: animationFrames linear 0.8s;
+  -ms-animation-iteration-count: 20;
+  -ms-transform-origin: ;
+}
+
+@keyframes animationFrames{
+  0% {
+      left:0px;
+      top:0px;
+      opacity:1;
+      transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+    }
+  15% {
+      top:0px;
+      transform:  scaleX(1.1) scaleY(1.1) ;
+    }
+  100% {
+      left:0px;
+      top:0px;
+      opacity:1;
+      transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+    }
+}
+
+@-moz-keyframes animationFrames{
+  0% {
+      left:0px;
+      top:0px;
+      opacity:1;
+      -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+    }
+  15% {
+      top:0px;
+      -moz-transform:  scaleX(1.1) scaleY(1.1) ;
+    }
+  100% {
+      left:0px;
+      top:0px;
+      opacity:1;
+      -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+    }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+      left:0px;
+      top:0px;
+      opacity:1;
+      -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+    }
+  15% {
+      top:0px;
+      -webkit-transform:  scaleX(1.1) scaleY(1.1) ;
+    }
+  100% {
+      left:0px;
+      top:0px;
+      opacity:1;
+      -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+    }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+      left:0px;
+      top:0px;
+      opacity:1;
+      -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+    }
+  15% {
+      top:0px;
+      -o-transform:  scaleX(1.1) scaleY(1.1) ;
+    }
+  100% {
+      left:0px;
+      top:0px;
+      opacity:1;
+      -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+    }
+}
+
+@-ms-keyframes animationFrames {
+  0% {
+      left:0px;
+      top:0px;
+      opacity:1;
+      -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+    }
+  15% {
+      top:0px;
+      -ms-transform:  scaleX(1.1) scaleY(1.1) ;
+    }
+  100% {
+      left:0px;
+      top:0px;
+      opacity:1;
+      -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+    }
+}
+    </style>
+    <img class="anim" src="logo.svg" style="display: block; margin: 130px auto 0 auto; width: 300px; height: 300px;">
     <h1 style="text-align: center; font-family: 'Open Sans', 'sans-serif'; font-weight: lighter; font-size: 80px; margin-top: 15px;">Jimmy</h1>
   </body>
 </html>
